@@ -44,10 +44,8 @@ const reviewRoutes = require('./src/routes/review');
 const uploadRoutes = require('./src/routes/upload');
 const jobRoutes = require('./src/routes/job');
 const searchRoutes = require('./src/routes/searchRoutes');
-const forgotPasswordRoutes = require('./src/routes/forgotPasswordRoutes');
 
 app.use('/api/auth', authRoutes);
-app.use('/api/auth', forgotPasswordRoutes);
 app.use('/api/services', serviceRoutes);
 app.use('/api/bookings', bookingRoutes);
 app.use('/api/reviews', reviewRoutes);
