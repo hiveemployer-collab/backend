@@ -5,7 +5,7 @@ const sendPasswordResetEmail = async (email, resetToken) => {
   const resetUrl = `${process.env.FRONTEND_URL || 'https://inhive.work'}/reset-password?token=${resetToken}`;
   try {
     await resend.emails.send({
-      from: 'HIVE <onboarding@resend.dev>',
+      from: 'HIVE <noreply@inhive.work>',
       to: email,
       subject: 'HIVE - Password Reset Request',
       html: `<div style="font-family:Arial,sans-serif;padding:24px;">
